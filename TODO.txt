@@ -1,0 +1,71 @@
+### ITEMS ###
++ Wax - burning rotten flesh in furnace
++ Candle - 2 strings + 7 Was in crafting table
++ Colored paper - Paper + dye in crafting table
++ Bottled Fire Spirit - Right click with an empty botle on Fire Spirit.
+        If right click on watter then the Fire Spirit disapear and we get watter bottle.
++ Light Level Meter - (craft ?)
+        A tool to measure the light level of the block it is pointed at.
++ Flare - recipe in picture
+        Temporary illuminates an area (How many time ?)
++ Drifting Lantern - recipe in picture.
+        Place on water as a floating entity,
+        will move when came into contact with other entities,
+        Provides illumination,
+        Move with water flow,
+        Can be placed on water.
++ Floating Lantern - recipe in picture
+        Will float into the sky until a certain height (witch height ?),
+        Block until right click on it with flint & steel, then change in an entity,
+        will move when came into contact with other entities,
+        Provides illumination,
+        Can be placed on ground.
++ Depth Lantern - recipe in picture
+        Place on water as a sinking entity,
+        Will sink to the bottom of water,
+        Provides illumination.
+        Can be placed on water.
++ Ghost Lantern - recipe in picture
+        Following entity of the placer,
+        Provides illumination,
+        Will move when came into contact with other entities.
+        Can be placed on ground.
++ Firefly Lantern - recipe in picture
+        Floating patrol entity (radius 9),
+        Provides illumination (light level ?),
+        Will move when came into contact with other entities,
+        Can be placed on ground.
++ Spider Lantern - recipe in picture
+        Crawling entity (radius 9),
+        Can be placed on wall.
++ Fish Lantern - recipe in picture
+        Water patrol entity,
+        Provides illumination,
+        will move when came into contact with other entities,
+        Can be placed on water.
++ Owl lantern - recipe in picture
+        Make a sound when the night is coming (witch time ?),
+        Provides illumination,
+        Can be placed on leaves or wood.
++ Mob Head Lantern - recipe in picture
+        Head's looking lantern,
+        Provides illumination.
+        Can be placed on wall or ground.
+ 
+### MONSTER ###
++ Fire Spirit :
+        HP : 10, no armor
+        Spawns in a Roofed Forest,
+        Illuminates the surroundings,
+        Can be caught with a glass bottle,
+        Hostile to the player,
+        Does not attack but sets nearby entities on fire,
+        Takes damage from water,
+        Immune to fire and any debuffs.
+       
+### QUESTIONS ###
+* Can some lanterns be destroyed, like the ghost lantern ? How many HP ?
+	Yes. 1 hit without any tool or weapons. And could be picked up by Shift Right-Clicking at it.
+	
+* What is the default light level of the lanterns? Can it be change in a config file?
+	11, or just slightly lower than a Torch. Yes or no. If some player decided to cheat, they're just gonna set it way high. Try setting a limit.
