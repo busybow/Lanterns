@@ -2,6 +2,7 @@ package com.lanterns;
 
 import java.util.Random;
 
+import com.lanterns.entities.FloatingLanternEntity;
 import com.lanterns.entities.SpiderLanternEntity;
 import com.lanterns.proxy.CommonProxy;
 
@@ -29,6 +30,7 @@ public class LanternsMod {
     public void init(FMLInitializationEvent event)
     {
 		registerEntity(SpiderLanternEntity.class, "spiderLanternEntity");
+		registerEntity(FloatingLanternEntity.class, "floatingLanternEntity");
 		proxy.registerRenderers();
     }
     
