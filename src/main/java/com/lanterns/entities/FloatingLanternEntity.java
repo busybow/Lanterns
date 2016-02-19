@@ -1,8 +1,8 @@
 package com.lanterns.entities;
 
+import com.lanterns.entities.ai.FloatingEntityAi;
+
 import net.minecraft.entity.EntityFlying;
-import net.minecraft.pathfinding.PathEntity;
-import net.minecraft.pathfinding.PathPoint;
 import net.minecraft.world.EnumSkyBlock;
 import net.minecraft.world.World;
 
@@ -15,18 +15,8 @@ public class FloatingLanternEntity extends EntityFlying{
 		super(p_i1582_1_);
 		this.moveFlying(this.moveForward, this.moveStrafing, moveSpeed);
 		
-		//movement test
-		PathEntity pathentity = this.getNavigator().getPathToXYZ(this.posX, (double) 255, this.posZ);
-		System.out.println(pathentity);
-		if (pathentity != null && !pathentity.isFinished())
-        {
-            for (int i = 0; i < Math.min(pathentity.getCurrentPathIndex() + 2, pathentity.getCurrentPathLength()); ++i)
-            {
-                PathPoint pathpoint = pathentity.getPathPointFromIndex(i);
-                this.posX = pathpoint.xCoord;
-                this.posY = pathpoint.yCoord + 1;
-                this.posZ = pathpoint.zCoord;            }
-        }
+		//custom ai task
+		this.tasks.addTask(1, new FloatingEntityAi(this));
 	}
 	
 	/**

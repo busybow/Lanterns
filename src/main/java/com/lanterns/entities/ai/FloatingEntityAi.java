@@ -29,7 +29,7 @@ public class FloatingEntityAi extends EntityAIBase {
 	public void startExecuting()
 	{
 	   // DEBUG
-	   System.out.println("AIFloating startExecute()");
+	   System.out.println("CustomAI startExecute()");
 	}
 	
 	@Override
